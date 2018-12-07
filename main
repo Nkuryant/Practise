@@ -1,0 +1,25 @@
+#include <iostream> 
+#include <algorithm> 
+#include <string> 
+#include <regex> 
+using namespace std; 
+int main() 
+{ 
+string name, age; 
+cin»name; 
+std::smatch result; 
+std::regex regular("[A-Z]{1,15}""[a-z]{1,15}"); 
+if(std::regex_match(name,result,regular)){ 
+ cin»age; 
+ std::regex regular_age("[0-9]{1,15}"); 
+ if(std::regex_match(age,regular_age)){ 
+ 
+ } 
+ else{ 
+ cout«"else"; 
+ } 
+} 
+else{ 
+ cout«"else"; 
+} 
+}
